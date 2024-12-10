@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1> Hot? or Not ...</h1>
+    <div id = 'search_box'>
+        <h3><b>Watched a movie recently?</b></h3>
+        <h3><b>Let us know your thoughts below!</b></h3>
+        <form action="http://localhost:<%= portNumber %>/" method="post">
+            <input type ="text" name = "movieTitle" id = "movieTitle" placeholder = "Movie Title">
+            <br><br>
+            <input type = 'submit' value = 'Find the movie'>
+            <input type = 'reset'>
+        </form>
+    </div>
+</body>
+
+</html>

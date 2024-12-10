@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Movie Reviewed</title>
+
+</head>
+
+<body>
+	<h1>Movie Review</h1>
+	<div>
+		<strong>Username: </strong><%- username %><br>
+        <strong>Movie ID: </strong><%- movieID %><br>
+		<strong>Star Rating: </strong><%- stars %><br>
+        <strong>What you thought: </strong><br>
+        <%- usersreview %> 
+	</div>
+    <hr>
+    <strong>
+        Task completed at <span id="display"></span>
+    </strong>
+    <hr>
+    <a href="/">HOME</a>
+</body>
+
+<script>
+    document.querySelector("#display").textContent = new Date();
+</script>
+
+</html>

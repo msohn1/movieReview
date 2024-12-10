@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>User Movie Review</title>
+</head>
+
+<body>
+    <h1>Review of <%- movie_title %></h1>
+
+    <div>
+        <form action="http://localhost:<%= portNumber %>/review/:id/:title" method="post" onsubmit="return confirmSubmission()">
+            <fieldset>
+                <strong>Username: </strong><input type="text" name="username" id="username" required>
+                <br>
+                <br>
+                <input type="text" name="movieID" id="movieID" value="<%- movieID %>" hidden>
+                <strong>Star Rating: </strong><select name="stars" id="stars">
+                    <option value="0">0 Star</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                  </select>
+
+                <br>
+                <br>
+                <strong>What do you Think?: </strong> <br><textarea rows="8" cols="80" name="usersreview" id="usersreview" required></textarea>
+            </fieldset>
+            <br>
+            <input type="reset">&nbsp;<input type="submit" value="Post">
+        </form>
+    </div>
+    <hr>
+    <a href="/">HOME</a>
+</body>
+
+<script>
+    const movieID = localStorage.getItem("movieTitle");
+
+    function confirmSubmission() {
+    return window.confirm("Are you sure you want to submit your application?\nYou will not be able to change your information once submitted");
+}
+</script>
+
+</html>
