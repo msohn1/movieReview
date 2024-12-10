@@ -47,7 +47,7 @@ app.set("views", path.resolve(__dirname, "templates"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.render("homepage", {portNumber});
+    res.render("homepage");
 });
 
 app.post("/", async (req, res) => {
@@ -85,7 +85,6 @@ app.get("/review/:id/:title", async (req, res) => {
     const title = req.params.title;
 
     const variables = {
-        portNumber: portNumber,
         movie_title: title,
         movieID: imdbID
     };
