@@ -20,28 +20,10 @@ const API_KEY = 'b4cc1523'
 //const API_REQ = `http://www.omdbapi.com/?apikey=${API_KEY}`
 const API_REQ = 'https://www.omdbapi.com/?s=blade runner&apikey=b4cc1523'
 
-process.stdin.setEncoding("utf8");
-if (process.argv.length !== 3) {
-    console.log("Please provide with a valid port number");
-    process.exit(1);
-}
-const portNumber = process.argv[2];
+const portNumber = 5005;
 
 app.listen(portNumber);
-console.log(`Web server started and running at http://localhost:${portNumber}`);
-process.stdout.write("Stop to shutdown the server: ");
-
-process.stdin.on('data', (dataInput) => {
-    const command = dataInput.trim().toLowerCase();
-if (command === "stop") {
-        console.log("Shutting down the server");
-        process.exit(0);
-    } else {
-        console.log(`Invalid command: ${command}`);
-        process.stdout.write("Stop to shutdown the server: ");
-    }
-});
-
+console.log(`Web server started`);
 
 app.set("views", path.resolve(__dirname, "templates"));
 app.set("view engine", "ejs");
