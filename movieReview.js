@@ -116,7 +116,9 @@ async function lookUpReviews(client, databaseAndCollection, movieID) {
 
         let toRet = "";
 
-        result.forEach(elem => {
+        const random = result.sort(() => Math.random() - 0.5);
+
+        random.slice(0,5).forEach(elem => {
             toRet += `<li>Star Rating: ${elem.stars} Review: ${elem.usersreview}</li>`;
         });
 
