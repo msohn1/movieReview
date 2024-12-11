@@ -75,17 +75,18 @@ app.get("/review/:id/:title", async (req, res) => {
 });
 
 app.post("/review/:id/:title", async (req, res) => {
-    let {username, movieID, stars} = req.body;
+    let {username, movieID, movieTitle, stars} = req.body;
     let {usersreview} = req.body;
 
     const variables = {
         username: username,
         movieID: movieID,
+        movieTitle: movieTitle,
         stars: stars,
         usersreview: usersreview
     };
 
-    const newReview = {username: username, movieID: movieID, stars: stars, usersreview: usersreview};
+    const newReview = {username: username, movieID: movieID, movieTitle: movieTitle, stars: stars, usersreview: usersreview};
 
     await insertReview(client, databaseAndCollection, newReview);
 
