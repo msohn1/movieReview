@@ -4,11 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Results</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            color: #2274A5;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #ffebe5;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        table td {
+            padding: 30px;
+            text-align: center;
+        }
+
+        table th {
+            padding-top:15px;
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            color: #2274A5;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border: none;
+            height: 2px;
+            background: #2274A5;
+        }
+
+        div {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #2274A5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+    </style>
 </head>
 <body> 
-    <h1>Movie Search Results for <%- movie_Title %>:</h1>
-
     <table>  
+        <thead>
+            <tr>
+              <th colspan="100%">Movie Search Results for <%- movie_Title %>:</th>
+            </tr>
+          </thead>
         <%- table_data %>
     </table>
 
