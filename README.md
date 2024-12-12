@@ -9,6 +9,8 @@
 >
 **YouTube Video Link:** [https://www.youtube.com/watch?v=ezjtye6Xwq0](https://www.youtube.com/watch?v=ezjtye6Xwq0)
 >
+**Github Link:** [https://github.com/msohn1/movieReview](https://github.com/msohn1/movieReview)
+>
 **API:** OMDb API ([https://www.omdbapi.com/](https://www.omdbapi.com/))
 >
 **Contact Email:** msohn1@terpmail.umd.edu
