@@ -23,7 +23,7 @@ const API_REQ = 'https://www.omdbapi.com/?s=blade runner&apikey=b4cc1523'
 const portNumber = 5005;
 
 app.listen(portNumber);
-console.log(`Web server started`);
+console.log(`Web server started at https://moviereview-0crp.onrender.com`);
 
 app.set("views", path.resolve(__dirname, "templates"));
 app.set("view engine", "ejs");
