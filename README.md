@@ -7,5 +7,6 @@
 >
 **YouTube Video Link:** Placeholder
 >
-**APIs:** OMDb API ([https://www.omdbapi.com/](https://www.omdbapi.com/))
+**API:** OMDb API ([https://www.omdbapi.com/](https://www.omdbapi.com/))
 >
+**Contact Email:** msohn1@terpmail.umd.edu
