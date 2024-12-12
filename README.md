@@ -7,7 +7,7 @@
 >
 **Website Link:** [https://moviereview-0crp.onrender.com](https://moviereview-0crp.onrender.com)
 >
-**YouTube Video Link:** Placeholder
+**YouTube Video Link:** [https://www.youtube.com/watch?v=ezjtye6Xwq0](https://www.youtube.com/watch?v=ezjtye6Xwq0)
 >
 **API:** OMDb API ([https://www.omdbapi.com/](https://www.omdbapi.com/))
 >
