@@ -1,2 +1,2 @@
 # Final Project
-**Submitted by: ** Minjae Sohn (msohn1)
+**Submitted by:** Minjae Sohn (msohn1)
